@@ -1,10 +1,10 @@
 # Multi-linear vs Linear Regression
 
-This project implements and compares simple linear and multivariate regression models as part of the Harvard Data Science course.
+This project implements and analyzes different approaches to linear regression models as part of the Harvard Data Science course.
 
 ## Description
 
-Linear regression is a supervised learning method used to predict continuous values. This project includes practical examples and detailed explanations to understand its operation.
+Linear regression is a supervised learning method used to predict continuous values. This project includes practical examples and detailed explanations to understand both simple linear regression and multivariate regression models.
 
 ## Project Structure
 
@@ -26,22 +26,35 @@ Linear regression is a supervised learning method used to predict continuous val
    - Use of `train_test_split` for random division
 
 3. **Regression Models**
-   - Fitting simple linear regression models for each predictor
-   - Fitting a multivariate regression model using all predictors
+   - Simple Linear Regression (`multi-linear_vs_linear.ipynb`):
+     - Individual models for each predictor (TV, Radio, Newspaper)
+     - Comparison of R² values for train and test sets
+     - Visualization of predictions vs actual values
+   - Multiple Linear Regression Analysis (`multi-linear_model.ipynb`):
+     - Evaluation of all possible predictor combinations
+     - Mean Squared Error (MSE) calculation for each combination
+     - Performance comparison between different predictor sets
 
 4. **Visualizations**
    - Scatter plots for training and test data
-   - Fitted line for linear models
+   - Fitted lines for linear models
    - Comparison of predicted vs actual values
 
 5. **Model Evaluation**
-   - Calculation of R² values for each model
-   - Comparison of performance between simple linear and multivariate models
+   - R² values for simple linear models
+   - MSE values for different predictor combinations
+   - Performance comparison across all model variations
 
 ## Results
 
-The `multi-linear_vs_linear.ipynb` notebook contains the complete implementation with:
-- Exploratory data analysis
-- Fitting of simple linear and multivariate models
-- Result visualizations
-- Model performance metrics
+The project contains two main notebooks:
+
+1. `multi-linear_vs_linear.ipynb`:
+   - Compares individual predictor performance
+   - Implements simple and multivariate regression
+   - Visualizes results and calculates R² metrics
+
+2. `multi-linear_model.ipynb`:
+   - Analyzes all possible predictor combinations
+   - Evaluates model performance using MSE
+   - Determines optimal predictor combinations
